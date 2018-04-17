@@ -5,7 +5,7 @@ describe(`the visibilityFilter reducer`, () => {
   it(`should return the default state`, () => {
     const state = undefined;
     const action = {};
-    const expectedOutput = VisibilityFilters.SHOW_ALL;
+    const expectedOutput = VisibilityFilters.SHOW_COMPLETED;
     expect(reducer(state, action)).toEqual(expectedOutput);
   });
 });
