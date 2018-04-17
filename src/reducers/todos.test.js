@@ -1,10 +1,10 @@
-import reducer from "./todos";
+import reducer, { defaultState } from "./todos";
 
 describe(`the todos reducer`, () => {
   it(`should return the default state`, () => {
     const state = undefined;
     const action = {};
-    const expectedOutput = [];
+    const expectedOutput = defaultState;
     expect(reducer(state, action)).toEqual(expectedOutput);
   });
 });
