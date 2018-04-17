@@ -6,17 +6,8 @@ describe(`the index reducer`, () => {
     const state = undefined;
     const action = {};
     const expectedOutput = {
-      todos: [
-        {
-          text: "Consider using Redux",
-          completed: true
-        },
-        {
-          text: "Keep all state in a single tree",
-          completed: false
-        }
-      ],
-      visibilityFilter: VisibilityFilters.SHOW_COMPLETED
+      todos: [],
+      visibilityFilter: VisibilityFilters.SHOW_ALL
     };
     expect(index(state, action)).toEqual(expectedOutput);
   });
