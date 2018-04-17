@@ -1,18 +1,6 @@
 import { ADD_TODO, TOGGLE_TODO } from "../actions";
 
-function todos(
-  state = [
-    {
-      text: "Consider using Redux",
-      completed: true
-    },
-    {
-      text: "Keep all state in a single tree",
-      completed: false
-    }
-  ],
-  action
-) {
+function todos(state = [], action) {
   switch (action.type) {
     case ADD_TODO:
       return [
